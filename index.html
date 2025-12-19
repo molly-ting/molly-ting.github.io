@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Your Name</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Minimal al-folio–like typography -->
+  <style>
+    body {
+      max-width: 900px;
+      margin: auto;
+      padding: 2rem;
+      font-family: -apple-system, BlinkMacSystemFont,
+                   "Segoe UI", Roboto, Helvetica, Arial,
+                   "Noto Serif", serif;
+      line-height: 1.6;
+      color: #111;
+    }
+
+    h1, h2 {
+      font-weight: 500;
+    }
+
+    h1 {
+      margin-bottom: 0.2em;
+    }
+
+    h2 {
+      margin-top: 2em;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 0.3em;
+    }
+
+    a {
+      color: #0056b3;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .meta {
+      margin-bottom: 1.5em;
+      color: #444;
+      font-size: 0.9em;     
+    }
+
+    .pub {
+      margin-bottom: 1em;
+    }
+
+    .pub-title {
+      font-weight: 500;
+    }
+
+    .pub-venue {
+      font-style: italic;
+    }
+
+    #publications {
+      counter-reset: pub-counter;
+    }
+
+    .pub {
+      display: flex;
+      align-items: flex-start;
+      margin-bottom: 1.3em;
+    }
+
+    .pub-index::before {
+      content: "•";         /* dot */
+      font-size: 1.4em;     /* make the dot slightly larger */
+      width: 0.8em;         /* smaller width so dot is closer to title */
+      display: inline-block;
+      font-weight: 500;
+      margin-right: 0.3em;  /* reduce space between dot and title */
+      line-height: 1;       /* align vertically with title */
+    }
+
+    .pub-body {
+      flex: 1;
+    }
+
+    .pub-title {
+      font-weight: 600;
+    }
+
+    .pub-authors {
+      margin-top: 0.2em;
+      color: #333;
+    }
+
+    .pub-venue {
+      margin-top: 0.2em;
+      font-style: italic;
+      color: #444;
+    }
+  </style>
+</head>
+
+<body>
+
+<h1>Mengting He</h1>
+
+<div class="meta">
+  PhD Student<br>
+  College of Information Sciences and Technology<br>
+  The Pennsylvania State University<br>
+  Email: mvh6224@psu.edu<br>
+  <a href="assets/CV_Mengting.pdf">CV (PDF)</a> ·
+  <a href="https://github.com/molly-ting">GitHub</a>
+</div>
+
+<!-- <h2>Introduction</h2> -->
+
+<p>
+  I am a fourth-year PhD student in the College of Information Sciences and Technology at <a href="https://www.psu.edu/">Pennsylvania State University</a>, advised by <a href="https://songlh.github.io/">Prof. Linhai Song</a>.
+  I earned both my bachelor's and master's degrees from Nanjing University and worked at Pinduoduo for two years before pursuing my PhD.
+  My research interests include program analysis, software security, and related areas in software engineering.
+</p>
+
+<h2>Publications</h2>
+
+<!-- === Publications generated from BibTeX (flattened) === -->
+
+<div id="publications">
+
+  <div class="pub">
+    <div class="pub-index"></div>
+    <div class="pub-body">
+      <div class="pub-title">
+        M2K: Model-Aware Symbolic Execution for Safe CUDA Kernels
+      </div>
+      <div class="pub-authors">
+        Mengting He, Shihao Xia, Haomin Jia, Wenfei Wu, and Linhai Song
+      </div>
+      <div class="pub-venue">
+        (Under submission)
+      </div>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-index"></div>
+    <div class="pub-body">
+      <div class="pub-title">
+        How to Save My Gas Fees: Understanding and Detecting Real-World Gas Issues in Solidity Programs
+      </div>
+      <div class="pub-authors">
+        Mengting He, Shihao Xia, Boqin Qin, Nobuko Yoshida,
+        Tingting Yu, Yiying Zhang, and Linhai Song
+      </div>
+      <div class="pub-venue">
+        <i>IEEE Transactions on Software Engineering</i> (2025)
+      </div>
+      <div>
+        <i>Accepted as a Journal-First paper at ICSE 2026</i>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-index"></div>
+    <div class="pub-body">
+      <div class="pub-title">
+        SC-Bench: A Large-Scale Dataset for Smart Contract Auditing
+      </div>
+      <div class="pub-authors">
+        Shihao Xia, Mengting He, Linhai Song, and Yiying Zhang
+      </div>
+      <div class="pub-venue">
+        In 2025 <i>IEEE/ACM International Workshop on Large Language Models for Code (LLM4Code)</i>
+      </div>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-index"></div>
+    <div class="pub-body">
+      <div class="pub-title">
+        SymGPT: Auditing Smart Contracts via Combining Symbolic Execution with Large Language Models
+      </div>
+      <div class="pub-authors">
+        Shihao Xia, Mengting He, Shuai Shao,
+        Tingting Yu, Yiying Zhang, and Linhai Song
+      </div>
+      <div class="pub-venue">
+        <i>arXiv preprint</i> arXiv:2502.07644 (2025)
+      </div>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-index"></div>
+    <div class="pub-body">
+      <div class="pub-title">
+        AuditGPT: Auditing Smart Contracts with ChatGPT
+      </div>
+      <div class="pub-authors">
+        Shihao Xia, Shuai Shao, Mengting He,
+        Tingting Yu, Linhai Song, and Yiying Zhang
+      </div>
+      <div class="pub-venue">
+        <i>arXiv preprint</i> arXiv:2404.04306 (2024)
+      </div>
+    </div>
+  </div>
+
+  <div class="pub">
+    <div class="pub-index"></div>
+    <div class="pub-body">
+      <div class="pub-title">
+        Evaluation System for Reasoning Description of Judgment Documents Based on TensorFlow CNN
+      </div>
+      <div class="pub-authors">
+        Mengting He, Zhongyue Li, Yanshu Wei, Jidong Ge,
+        Peitang Ling, Chuanyi Li, Ting Lei, and Bin Luo
+      </div>
+      <div class="pub-venue">
+        In <i>Data Science: 5th International Conference of Pioneering Computer Scientists,
+        Engineers and Educators (ICPCSEE 2019)</i>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- === End publications === -->
+
+</body>
+</html>
